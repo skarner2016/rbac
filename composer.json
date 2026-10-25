@@ -1,0 +1,48 @@
+{
+    "name": "skarner2016/rbac",
+    "description": "Framework-agnostic RBAC for PHP: role-only permissions with menu, route and button types.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "rbac",
+        "permission",
+        "roles",
+        "menu",
+        "pdo",
+        "php"
+    ],
+    "homepage": "https://github.com/skarner2016/rbac",
+    "authors": [
+        {
+            "name": "skarner2016"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/skarner2016/rbac/issues",
+        "source": "https://github.com/skarner2016/rbac"
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "ext-pdo": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skarner\\Rbac\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Skarner\\Rbac\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
